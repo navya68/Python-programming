@@ -1,0 +1,19 @@
+cname = input("Enter customer name")
+cno =int(input("Enter customer number"))
+pi = int(input("Enter no.of items purchased"))
+bill = pi*300;
+pc = input("Enter promo code")#hello or hi
+if pc=='HELLO' or pc=='hello':
+    dis = bill*50/100
+elif pc=='hi' or pc=='HI':
+    dis = bill*40/100
+elif bill>=2000:
+    dis = bill*20/100
+elif bill>=1000:
+    dis = bill*10/100
+else:
+    dis = bill*5
+tbill = bill-dis
+gbill = tbill*12/100
+obill = tbill+gbill
+print("Total bill is " ,obill)
