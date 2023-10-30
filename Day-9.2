@@ -1,0 +1,14 @@
+def prime(n):
+       s=0
+       temp=n
+       for j in range(0+1,n,1):
+             if(n%j==0):
+                 s=s+j
+       if(s==temp):
+            print("Perfect")
+       else:
+            print("Not Perfect")
+t=int(input("Enter tc"))
+for i in range(t):
+      n=int(input())
+      prime(n)
