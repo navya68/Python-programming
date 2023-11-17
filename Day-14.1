@@ -1,0 +1,8 @@
+n=int(input("enter range"))
+print("enter", n, "elements")
+l=list(map(int,input().split()))
+s=set(l)
+k=int(input("enter required k position"))
+l=list(s)
+l.sort()
+print(l[k])
