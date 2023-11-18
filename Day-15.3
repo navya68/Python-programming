@@ -1,0 +1,13 @@
+n=int(input("enter range"))
+l=[]
+s=list(map(int,input().split()))
+for i in s:
+    l.append(i)
+minn=[]
+minn.append(min(l))
+m=[]
+s=list(map(int,input().split()))
+for i in s:
+    m.append(i)
+minn.append(min(m))
+print(min(minn))
