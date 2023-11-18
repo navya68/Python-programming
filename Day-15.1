@@ -1,0 +1,14 @@
+n=int(input("enter range"))
+l=[]
+s=list(map(int,input().split()))
+for i in s:
+    l.append(i)
+m=[]
+s=list(map(int,input().split()))
+for i in s:
+    m.append(i)
+res=[]
+for i in range(0,n):
+    sub=l[i]-m[i]
+    res.append(sub)
+print(res)
